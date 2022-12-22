@@ -2,12 +2,12 @@ import React from 'react';
 // import { UilFacebook, UilInstagram, UilWhatsapp, UilGithub } from '@iconscout/react-unicons';
 import './styles.css';
 
-function Home() {
+function Services() {
   return (
-    <section className="container-home" id="home">
-      <p>Home</p>
+    <section className="container-services" id="services">
+      <p>Services</p>
     </section>
   );
 }
 
-export default Home;
+export default Services;

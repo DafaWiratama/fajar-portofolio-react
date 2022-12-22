@@ -6,6 +6,7 @@
   justify-content: space-between;
   color: var(--title-color);
   position: fixed;
+  z-index: var(--z-fixed);
   background-color: var(--body-color);
 }
 

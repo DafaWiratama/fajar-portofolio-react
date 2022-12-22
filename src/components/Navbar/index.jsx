@@ -52,12 +52,24 @@ function Navbar() {
 
         <div className="container-menu-nav">
           <ul className="menu-nav">
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Services</li>
-            <li>Portofolio</li>
-            <li>Contact Me</li>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#portofolio">Portofolio</a>
+            </li>
+            <li>
+              <a href="#contact">Contact Me</a>
+            </li>
             <li>
               {theme !== 'dark' ? (
                 <button className="btn-icon-theme" type="button" onClick={themeToggler}>
@@ -99,37 +111,37 @@ function Navbar() {
           <ul className="wrapper-bottom-menu">
             <li className="link-menu">
               <UilEstate />
-              <a className="link-menu" href="/#">
+              <a className="link-menu" href="#home">
                 Home
               </a>
             </li>
             <li className="link-menu">
               <UilUser />
-              <a className="link-menu" href="/#">
+              <a className="link-menu" href="#about">
                 About
               </a>
             </li>
             <li className="link-menu">
               <UilFileAlt />
-              <a className="link-menu" href="/#">
+              <a className="link-menu" href="#skills">
                 Skills
               </a>
             </li>
             <li className="link-menu">
               <UilBriefcaseAlt />
-              <a className="link-menu" href="/#">
+              <a className="link-menu" href="#services">
                 Services
               </a>
             </li>
             <li className="link-menu">
               <UilScenery />
-              <a className="link-menu" href="/#">
+              <a className="link-menu" href="#portofolio">
                 Portofolio
               </a>
             </li>
             <li className="link-menu">
               <UilCommentAltMessage />
-              <a className="link-menu" href="/#">
+              <a className="link-menu" href="#contact">
                 Contact Me
               </a>
             </li>
