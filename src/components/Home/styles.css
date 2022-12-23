@@ -10,7 +10,6 @@
 }
 
 .home-social {
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   height: min-content;
@@ -97,6 +96,11 @@
   font-family: 'Poppins';
 }
 
+.scroll-down > p:hover {
+  color: var(--first-color);
+  cursor: pointer;
+}
+
 .icon-scroll {
   color: var(--first-color);
   width: 40px;
@@ -105,6 +109,9 @@
 
 .icon-mouse {
   margin-right: 5px;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 .icon-arrow {
@@ -147,4 +154,133 @@
 .home-photo {
   margin-bottom: 200px;
   position: relative;
+}
+
+@media screen and (max-width: 950px) {
+  .wrapper-home {
+    top: 0;
+    padding: 0;
+  }
+
+  .home-social {
+    margin-left: 10px;
+  }
+
+  .home-blob {
+    width: 250px;
+    margin-right: 20px;
+  }
+
+  .home-data {
+    padding-left: 5%;
+    padding-right: 4%;
+  }
+
+  .home-profile > h1 {
+    font-size: 25px;
+  }
+
+  .btn-contact-home {
+    height: 45px;
+    width: 120px;
+    font-size: 12px;
+  }
+
+  .icon-btn-contact {
+    width: 20px;
+    height: 20px;
+  }
+
+  .scroll-down {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .scroll-down > p {
+    font-size: 16px;
+  }
+
+  .icon-mouse {
+    width: 40px;
+    height: 30px;
+  }
+
+  /* .home-blob {
+    width: 250px;
+  }
+
+  .home-profile > h1 {
+    font-size: var(--small-font-size);
+  }
+
+  .home-profile > h3,
+  .home-profile > p {
+    font-size: var(--small-font-size);
+  }
+
+  .home-social {
+    padding: 0;
+  }
+
+  .icon-social-home {
+    width: 15px;
+    height: 15px;
+    margin: 5px 0;
+  }
+
+  .scroll-down {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;
+  } */
+}
+
+@media screen and (max-width: 690px) {
+  .wrapper-home {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    top: -30px;
+  }
+
+  .home-photo {
+    margin-bottom: 20px;
+  }
+
+  .home-blob {
+    width: 200px;
+    margin: 0;
+  }
+
+  .home-profile > h1 {
+    font-size: 20px;
+  }
+
+  .home-profile > h3 {
+    font-size: 16px;
+  }
+
+  .home-profile > p {
+    font-size: var(--small-font-size);
+    margin: 20px 0;
+  }
+
+  .btn-contact-home {
+    margin: 20px 0;
+  }
+
+  .scroll-down {
+    display: none;
+  }
+
+  .home-social {
+    flex-direction: row;
+    position: absolute;
+    margin: 0;
+  }
+
+  .icon-social-home {
+    margin: 0 10px;
+  }
 }
