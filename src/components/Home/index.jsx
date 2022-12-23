@@ -1,11 +1,70 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
-// import { UilFacebook, UilInstagram, UilWhatsapp, UilGithub } from '@iconscout/react-unicons';
+import {
+  UilFacebook,
+  UilInstagram,
+  UilWhatsapp,
+  UilGithub,
+  UilMessage,
+  UilMouseAlt,
+  UilArrowDown,
+} from '@iconscout/react-unicons';
+import BackgroundPhoto from '../../assets/icons/BackgroundPhoto';
 import './styles.css';
 
 function Home() {
   return (
     <section className="container-home" id="home">
-      <p>Home</p>
+      <div className="wrapper-home">
+        <div className="home-social">
+          <a
+            href="https://www.facebook.com/01010101010101x/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <UilFacebook className="icon-social-home" />
+          </a>
+          <a href="https://www.instagram.com/fajarrr035" target="_blank" rel="noopener noreferrer">
+            <UilInstagram className="icon-social-home" />
+          </a>
+          <a href="https://wa.me/6281213971331" target="_blank" rel="noopener noreferrer">
+            <UilWhatsapp className="icon-social-home" />
+          </a>
+          <a href="https://github.com/fajar035" target="_blank" rel="noopener noreferrer">
+            <UilGithub className="icon-social-home" />
+          </a>
+        </div>
+
+        <div className="home-data">
+          <div className="home-profile">
+            <h1>
+              Hi, I&apos;am <span>Fajar Pratama</span>
+            </h1>
+            <h3>Fullstack Developer</h3>
+            <p>
+              I really like solving problems in programming implementation, has its own happiness
+              for me, but with my skills still not good, I will continue to learn.
+            </p>
+          </div>
+
+          <button className="btn-contact" type="button">
+            <a href="#contact" className="btn-contact-home">
+              Contact Me
+              <UilMessage className="icon-btn-contact" />
+            </a>
+          </button>
+
+          <div className="scroll-down">
+            <UilMouseAlt className="icon-scroll icon-mouse" />
+            <p>Scroll Down</p>
+            <UilArrowDown className="icon-arrow" />
+          </div>
+        </div>
+
+        <div className="home-photo">
+          <BackgroundPhoto />
+        </div>
+      </div>
     </section>
   );
 }
