@@ -23,6 +23,7 @@
   --container-color: #fff;
   --scroll-bar-color: hsl(250, 12%, 90%);
   --scroll-thumb-color: hsl(250, 12%, 80%);
+  --text-experience-color: black;
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -53,6 +54,7 @@ body.dark-theme {
   --container-color: hsl(250, 29%, 16%);
   --scroll-bar-color: hsl(250, 12%, 48%);
   --scroll-thumb-color: hsl(250, 12%, 36%);
+  --text-experience-color: white;
 }
 
 /* Font size for large devices */
