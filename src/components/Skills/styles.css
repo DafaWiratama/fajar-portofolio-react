@@ -16,6 +16,7 @@
 }
 
 .wrapper-skills {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -55,6 +56,28 @@
 .dropdown_menu-9 {
   animation: growOut 300ms ease-in-out forwards;
   transform-origin: top center;
+}
+
+.wrapper-skills-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  flex-direction: row;
+  background-color: blueviolet;
+  /* flex-wrap: wrap; */
+}
+
+.menu-skills {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  width: 372px;
+  height: 55px;
+  cursor: pointer;
 }
 
 @-moz-keyframes downOut {

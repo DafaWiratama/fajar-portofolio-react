@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useEffect, useState } from 'react';
 import { UilBracketsCurly, UilAngleDown, UilServerNetworkAlt } from '@iconscout/react-unicons';
 import './styles.css';
@@ -42,6 +40,15 @@ function Skills() {
             </div>
           </div>
           <UilAngleDown className={`icon-skills ${openBackend ? 'icon-up' : ''}`} />
+        </div>
+      </div>
+      <div className="wrapper-skills-menu">
+        <div className="menu-skills">
+          <p>Menu Skill</p>
+        </div>
+
+        <div className="menu-skills">
+          <p>Menu Skill</p>
         </div>
       </div>
 

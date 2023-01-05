@@ -42,8 +42,10 @@ function Home() {
             </h1>
             <h3>Fullstack Developer</h3>
             <p>
-              I really like solving problems in programming implementation, has its own happiness
-              for me, but with my skills still not good, I will continue to learn.
+              I really like solving problems in programming implementation. This has its own
+              happiness for me, so I am more eager to learn programming. My experience is to create
+              a website project using the concept of single page application. Maybe I would like to
+              inform you more about my portfolio through this CV.
             </p>
           </div>
 
