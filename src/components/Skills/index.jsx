@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useEffect, useState } from 'react';
 import { UilBracketsCurly, UilAngleDown, UilServerNetworkAlt } from '@iconscout/react-unicons';
 import './styles.css';
@@ -9,10 +11,7 @@ function Skills() {
   const handleFrontend = () => setOpenFrontend(!openFrontend);
   const handleBackend = () => setopenBackend(!openBackend);
 
-  useEffect(() => {
-    console.log('SKILLS FRONTEND: ', openFrontend);
-    console.log('SKILLS BACKEND : ', openBackend);
-  }, [openFrontend, openBackend]);
+  useEffect(() => {}, [openFrontend, openBackend]);
 
   return (
     <section className="container-skills" id="skills">
