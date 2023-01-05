@@ -19,7 +19,8 @@
   "rules": {
     "react/react-in-jsx-scope": "off",
     "object-curly-newline": "off",
-    // "linebreak-style": ["off", "windows", "linux"]
-    "react/jsx-one-expression-per-line": "off"
+    "jsx-a11y/click-events-have-key-events": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "jsx-a11y/no-static-element-interactions": "off"
   }
 }
