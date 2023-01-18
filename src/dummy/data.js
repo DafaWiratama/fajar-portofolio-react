@@ -1,21 +1,55 @@
 const data = [
   {
-    frontend: {
-      HTML: '100%',
-      CSS: '90%',
-      React: '80%',
-      'React-Native': '70%',
-      NextJS: '75%',
-      NuxtJs: '80%',
-    },
+    id: 'fe',
+    name: 'Frontend Developer',
+    skills: [
+      {
+        name: 'HTML',
+        percentage: '99%',
+      },
+      {
+        name: 'CSS',
+        percentage: '80%',
+      },
+      {
+        name: 'React',
+        percentage: '70%',
+      },
+      {
+        name: 'React-Native',
+        percentage: '65%',
+      },
+      {
+        name: 'NextJS',
+        percentage: '70%',
+      },
+      {
+        name: 'NuxtJS',
+        percentage: '70%',
+      },
+    ],
   },
   {
-    backend: {
-      MySQL: '70%',
-      NodeJS: '80%',
-      ExpressJS: '80%',
-      PHP: '50%',
-    },
+    id: 'be',
+    name: 'Backend Developer',
+    skills: [
+      {
+        name: 'MySQL',
+        percentage: '60%',
+      },
+      {
+        name: 'NodeJS',
+        percentage: '70%',
+      },
+      {
+        name: 'ExpressJS',
+        percentage: '65%',
+      },
+      {
+        name: 'PHP',
+        percentage: '50%',
+      },
+    ],
   },
 ];
 
