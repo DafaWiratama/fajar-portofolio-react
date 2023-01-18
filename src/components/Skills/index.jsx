@@ -22,6 +22,7 @@ function Skills() {
         <div className="skills-content">
           <div className="skills-header">
             <h1>Header</h1>
+            <p>Percentage</p>
           </div>
           <div className="skills-data">
             <p>Data content</p>
