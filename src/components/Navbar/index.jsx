@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
 import {
   UilMoon,
   UilSun,
@@ -16,12 +15,12 @@ import iconTheme from '../../assets/images/iconName.png';
 import './styles.css';
 
 function Navbar() {
-  const location = useLocation();
+  const [id, setId] = useState('');
   const [colorBorder, setColorBorder] = useState(null);
   const [theme, setTheme] = useState('light');
   const [openMenu, setOpenMenu] = useState(false);
   const [darkTheme] = useState('dark-theme');
-  console.log(location.hash);
+
   const themeToggler = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
     window.localStorage.setItem('theme', theme);
@@ -29,7 +28,6 @@ function Navbar() {
   };
 
   const menutoggler = () => setOpenMenu(!openMenu);
-
   const initialTheme = () => window.localStorage.setItem('theme', theme);
   const getCurrenttheme = () => window.localStorage.getItem('theme') || theme;
 
@@ -37,6 +35,23 @@ function Navbar() {
     if (window.scrollY >= 80) return setColorBorder('scroll-header');
     return setColorBorder('');
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const section = document.querySelectorAll('section[id]');
+      section.forEach((ha) => {
+        const rect = ha.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top <= 150) {
+          setId(ha.id);
+          window.history.replaceState(null, null, `#${ha.id}`);
+        }
+      });
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     initialTheme();
@@ -55,35 +70,32 @@ function Navbar() {
         <div className="container-menu-nav">
           <ul className="menu-nav">
             <li>
-              <a className={location.hash === '#home' ? 'active' : ''} href="#home">
+              <a className={id === 'home' ? 'active' : ''} href="#home">
                 Home
               </a>
             </li>
             <li>
-              <a className={location.hash === '#about' ? 'active' : ''} href="#about">
+              <a className={id === 'about' ? 'active' : ''} href="#about">
                 About
               </a>
             </li>
             <li>
-              <a className={location.hash === '#skills' ? 'active' : ''} href="#skills">
+              <a className={id === 'skills' ? 'active' : ''} href="#skills">
                 Skills
               </a>
             </li>
             <li>
-              <a
-                className={location.hash === '#qualification' ? 'active' : ''}
-                href="#qualification"
-              >
+              <a className={id === 'qualification' ? 'active' : ''} href="#qualification">
                 Qualification
               </a>
             </li>
             <li>
-              <a className={location.hash === '#portofolio' ? 'active' : ''} href="#portofolio">
+              <a className={id === 'portofolio' ? 'active' : ''} href="#portofolio">
                 Portofolio
               </a>
             </li>
             <li>
-              <a className={location.hash === '#contact' ? 'active' : ''} href="#contact">
+              <a className={id === 'contact' ? 'active' : ''} href="#contact">
                 Contact Me
               </a>
             </li>
@@ -126,39 +138,42 @@ function Navbar() {
       ) : (
         <section className={`header-bottom-menu ${colorBorder}`}>
           <ul className="wrapper-bottom-menu">
-            <li className="link-menu">
+            <li className={`link-menu ${id === 'home' ? 'active' : ''}`}>
               <UilEstate />
-              <a className="link-menu" href="#home">
+              <a className={`link-menu ${id === 'home' ? 'active' : ''}`} href="#home">
                 Home
               </a>
             </li>
-            <li className="link-menu">
+            <li className={`link-menu ${id === 'about' ? 'active' : ''}`}>
               <UilUser />
-              <a className="link-menu" href="#about">
+              <a className={`link-menu ${id === 'about' ? 'active' : ''}`} href="#about">
                 About
               </a>
             </li>
-            <li className="link-menu">
+            <li className={`link-menu ${id === 'skills' ? 'active' : ''}`}>
               <UilFileAlt />
-              <a className="link-menu" href="#skills">
+              <a className={`link-menu ${id === 'skills' ? 'active' : ''}`} href="#skills">
                 Skills
               </a>
             </li>
-            <li className="link-menu">
+            <li className={`link-menu ${id === 'qualification' ? 'active' : ''}`}>
               <UilBriefcaseAlt />
-              <a className="link-menu" href="#services">
-                Services
+              <a
+                className={`link-menu ${id === 'qualification' ? 'active' : ''}`}
+                href="#qualification"
+              >
+                Qualification
               </a>
             </li>
-            <li className="link-menu">
+            <li className={`link-menu ${id === 'portofolio' ? 'active' : ''}`}>
               <UilScenery />
-              <a className="link-menu" href="#portofolio">
+              <a className={`link-menu ${id === 'portofolio' ? 'active' : ''}`} href="#portofolio">
                 Portofolio
               </a>
             </li>
-            <li className="link-menu">
+            <li className={`link-menu ${id === 'contact' ? 'active' : ''}`}>
               <UilCommentAltMessage />
-              <a className="link-menu" href="#contact">
+              <a className={`link-menu ${id === 'contact' ? 'active' : ''}`} href="#contact">
                 Contact Me
               </a>
             </li>
