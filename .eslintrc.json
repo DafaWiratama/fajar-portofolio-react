@@ -17,6 +17,7 @@
   },
   "plugins": ["react"],
   "rules": {
+    "linebreak-style": ["error", "windows"],
     "react/react-in-jsx-scope": "off",
     "object-curly-newline": "off",
     "jsx-a11y/click-events-have-key-events": "off",

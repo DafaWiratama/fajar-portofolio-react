@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import {
   UilMoon,
   UilSun,
@@ -15,11 +16,12 @@ import iconTheme from '../../assets/images/iconName.png';
 import './styles.css';
 
 function Navbar() {
+  const location = useLocation();
   const [colorBorder, setColorBorder] = useState(null);
   const [theme, setTheme] = useState('light');
   const [openMenu, setOpenMenu] = useState(false);
   const [darkTheme] = useState('dark-theme');
-
+  console.log(location.hash);
   const themeToggler = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
     window.localStorage.setItem('theme', theme);
@@ -53,22 +55,37 @@ function Navbar() {
         <div className="container-menu-nav">
           <ul className="menu-nav">
             <li>
-              <a href="#home">Home</a>
+              <a className={location.hash === '#home' ? 'active' : ''} href="#home">
+                Home
+              </a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a className={location.hash === '#about' ? 'active' : ''} href="#about">
+                About
+              </a>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <a className={location.hash === '#skills' ? 'active' : ''} href="#skills">
+                Skills
+              </a>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <a
+                className={location.hash === '#qualification' ? 'active' : ''}
+                href="#qualification"
+              >
+                Qualification
+              </a>
             </li>
             <li>
-              <a href="#portofolio">Portofolio</a>
+              <a className={location.hash === '#portofolio' ? 'active' : ''} href="#portofolio">
+                Portofolio
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact Me</a>
+              <a className={location.hash === '#contact' ? 'active' : ''} href="#contact">
+                Contact Me
+              </a>
             </li>
             <li>
               {theme !== 'dark' ? (

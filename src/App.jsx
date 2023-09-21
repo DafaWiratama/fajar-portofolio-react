@@ -3,7 +3,7 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import About from './components/About';
 import Skills from './components/Skills';
-import Services from './components/Services';
+import Qualification from './components/Qualification';
 import Portofolio from './components/Portofolio';
 import Contact from './components/Contact';
 
@@ -14,7 +14,7 @@ function App() {
       <Home />
       <About />
       <Skills />
-      <Services />
+      <Qualification />
       <Portofolio />
       <Contact />
       {/* <div style={{ height: '200vh', width: '100%' }}> </div> */}

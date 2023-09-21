@@ -11,11 +11,22 @@
 }
 
 .container-title:hover,
-.menu-nav > li:hover,
+.menu-nav > li a:hover,
 .link-menu:hover,
 .btn-icon-theme:hover {
   color: var(--first-color);
   cursor: pointer;
+  font-weight: 900;
+}
+
+.menu-nav li a {
+  color: var(--title-color);
+  /* font-weight: 500; */
+}
+
+.active {
+  color: var(--first-color) !important;
+  font-weight: 900;
 }
 
 .container-title {
