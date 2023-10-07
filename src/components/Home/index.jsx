@@ -5,6 +5,7 @@ import {
   UilInstagram,
   UilWhatsapp,
   UilGithub,
+  UilLinkedin,
   UilMessage,
   UilMouseAlt,
   UilArrowDown,
@@ -17,6 +18,12 @@ function Home() {
     <section className="container-home" id="home">
       <div className="wrapper-home">
         <div className="home-social">
+          <a href="https://id.linkedin.com/in/fajarrr035" target="_blank" rel="noopener noreferrer">
+            <UilLinkedin className="icon-social-home" />
+          </a>
+          <a href="https://github.com/fajar035" target="_blank" rel="noopener noreferrer">
+            <UilGithub className="icon-social-home" />
+          </a>
           <a
             href="https://www.facebook.com/01010101010101x/"
             target="_blank"
@@ -27,11 +34,8 @@ function Home() {
           <a href="https://www.instagram.com/fajarrr035" target="_blank" rel="noopener noreferrer">
             <UilInstagram className="icon-social-home" />
           </a>
-          <a href="https://wa.me/6281213971331" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/6285158822051" target="_blank" rel="noopener noreferrer">
             <UilWhatsapp className="icon-social-home" />
-          </a>
-          <a href="https://github.com/fajar035" target="_blank" rel="noopener noreferrer">
-            <UilGithub className="icon-social-home" />
           </a>
         </div>
 

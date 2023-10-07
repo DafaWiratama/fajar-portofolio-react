@@ -20,6 +20,7 @@
   --text-color-light: hsl(250, 8%, 65%);
   --input-color: hsl(250, 70%, 96%);
   --body-color: hsl(250, 60%, 99%);
+  --body-color-nav: hsl(250, 60%, 99%, 0.5);
   --container-color: #fff;
   --scroll-bar-color: hsl(250, 12%, 90%);
   --scroll-thumb-color: hsl(250, 12%, 80%);
@@ -51,6 +52,7 @@ body.dark-theme {
   --text-color: hsl(250, 8%, 75%);
   --input-color: hsl(250, 29%, 16%);
   --body-color: hsl(250, 28%, 12%);
+  --body-color-nav: hsl(250, 28%, 12%, , 0.5);
   --container-color: hsl(250, 29%, 16%);
   --scroll-bar-color: hsl(250, 12%, 48%);
   --scroll-thumb-color: hsl(250, 12%, 36%);

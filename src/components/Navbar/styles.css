@@ -7,7 +7,9 @@
   color: var(--title-color);
   position: fixed;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  background-color: var(--body-color-nav);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .container-title:hover,
@@ -130,8 +132,10 @@
     bottom: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--body-color);
+    background-color: var(--body-color-nav);
     transition: 0.5s;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
 
   .header-bottom-menu {
@@ -141,12 +145,14 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: var(--body-color);
+    background-color: var(--body-color-nav);
     padding: 2rem 1.5rem 0rem;
     box-shadow: 0 -1px 4px var(--text-color-light);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.5s;
     z-index: var(--z-fixed);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
 
   .icon-menu-nav-bottom {

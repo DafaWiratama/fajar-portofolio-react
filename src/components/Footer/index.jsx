@@ -1,4 +1,10 @@
-import { UilFacebook, UilInstagram, UilWhatsapp, UilGithub } from '@iconscout/react-unicons';
+import {
+  UilFacebook,
+  UilInstagram,
+  UilWhatsapp,
+  UilGithub,
+  UilLinkedin,
+} from '@iconscout/react-unicons';
 import './styles.css';
 
 function Footer() {
@@ -36,10 +42,36 @@ function Footer() {
         </ul>
 
         <div className="menu-nav wrapper-icon-footer">
-          <UilFacebook className="icon-footer-fb icon-footer" size="35" />
-          <UilInstagram className="icon-footer-ig icon-footer" size="35" />
-          <UilWhatsapp className="icon-footer-wa icon-footer" size="35" />
-          <UilGithub className="icon-footer-git icon-footer" size="35" />
+          <a className="link-icon" href="https://www.linkedin.com/in/fajarrr035/">
+            <UilLinkedin className="icon-footer-git icon-footer" size="35" />
+          </a>
+          <a className="link-icon" href="https://github.com/fajar035">
+            <UilGithub className="icon-footer-git icon-footer" size="35" />
+          </a>
+          <a
+            href="https://web.facebook.com/01010101010101x/?locale=id_ID"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-icon"
+          >
+            <UilFacebook className="icon-footer-fb icon-footer" size="35" />
+          </a>
+          <a
+            className="link-icon"
+            href="https://www.instagram.com/fajarrr035/?hl=id"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <UilInstagram className="icon-footer-ig icon-footer" size="35" />
+          </a>
+          <a
+            className="link-icon"
+            href="https://wa.me/6285158822051"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <UilWhatsapp className="icon-footer-wa icon-footer" size="35" />
+          </a>
         </div>
 
         <p>&copy;2023 Let&apos;s get a job | Portofolio - Fajar Pratama Vishinggah</p>

@@ -4,8 +4,8 @@ import './styles.css';
 
 function Qualification() {
   return (
-    <section className="container-services" id="qualification">
-      <p>Qualification</p>
+    <section className="qualification" id="qualification">
+      <p>saasd</p>
     </section>
   );
 }

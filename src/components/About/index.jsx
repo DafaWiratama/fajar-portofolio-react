@@ -1,6 +1,6 @@
 import React from 'react';
 import { UilDownloadAlt } from '@iconscout/react-unicons';
-import photoAbout from '../../assets/images/foto4.jpg';
+import photoAbout from '../../assets/images/profile-mid.jpg';
 import './styles.css';
 
 function About() {

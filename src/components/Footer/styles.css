@@ -47,6 +47,10 @@ footer {
   margin-bottom: 40px;
 }
 
+.link-icon {
+  color: #393e46;
+}
+
 .icon-footer {
   margin: 0 20px;
   transition: 0.5s;
